@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Задание №1: Квадратное уравнение</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.a(size=5)  }} * X^2 +
+            {{ form.b(size=5) }} * X +
+            {{ form.c(size=5) }} = 0
+        </p>
+        <p>{{ form.solve() }}</p>
+    </form>
+    <h2> {{solution}} </h2>
+{% endblock %}

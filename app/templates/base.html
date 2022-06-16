@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Test work</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Тестовое задание:
+            <a href="/index">1 Задание</a>
+            <a href="/2">2 Задание</a>
+        </div>
+
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
